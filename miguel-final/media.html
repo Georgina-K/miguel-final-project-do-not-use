@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Miguel - Media</title>
+
+<link href="./assets/stylesheets/styles.css" rel="stylesheet"/>
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+<link href="./assets/stylesheets/lightbox.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css">
+
+<body>
+
+    <!---Navigation bar--->
+    <div class="menu">
+      <a href="index.html" class="menu">Home</a>
+      <a href="about.html" class="menu">About</a>
+      <a href="discography.html" class="menu">Discography</a>
+      <a href="media.html" class="menu">Media</a>
+      <a href="merch.html" class="menu">Merch</a>
+      <a href="tour-dates.html" class="menu">Tour Dates</a>
+  </div>
+
+<body bgcolor="black">
+
+  <img class="irc_mi4" src="https://media1.giphy.com/media/26p63R69bn1mRoSgHw/source.gif" onload="typeof google==='object'
+      &amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Image result for miguel logo" width="450" height="253" style=""
+      data-iml="1564699628372">
+
+<div class="photo-gallery">PHOTOS:</div>
+
+<!---Light box photo gallery---->
+  <a href="./assets/images/lightbox/instagram 1.png" data-lightbox="instagram 1">
+<img src="./assets/images/lightbox/instagram 1-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 2.png" data-lightbox="instagram 2">
+<img src="./assets/images/lightbox/instagram 2-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 3.png" data-lightbox="instagram 3">
+<img src="./assets/images/lightbox/instagram 3-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 4.png" data-lightbox="instagram 4">
+<img src="./assets/images/lightbox/instagram 4-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 5.png" data-lightbox="instagram 5">
+<img src="./assets/images/lightbox/instagram 5-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 6.png" data-lightbox="instagram 6">
+<img src="./assets/images/lightbox/instagram 6-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 7.jpg" data-lightbox="instagram 7">
+<img src="./assets/images/lightbox/instagram 7-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 8.png" data-lightbox="instagram 8">
+<img src="./assets/images/lightbox/instagram 8-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 9.png" data-lightbox="instagram 8">
+<img src="./assets/images/lightbox/instagram 9-thumbnail.png" />
+  </a>
+
+  <a href="./assets/images/lightbox/instagram 10.jpg" data-lightbox="instagram 8">
+<img src="./assets/images/lightbox/instagram 10-thumbnail.jpeg" />
+  </a>
+
+<div class="videos">VIDEOS:</div>
+
+<div class="slidercontainer">
+        <div class="showSlide fade">
+            <iframe width="1000" height="315" src="https://www.youtube.com/embed/76O3w4pt0CA"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+            picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="showSlide fade">
+            <iframe width="1000" height="315" src="https://www.youtube.com/embed/rnhlTS8RgUM"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+            picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="showSlide fade">
+            <iframe width="1000" height="315" src="https://www.youtube.com/embed/8dM5QYdTo08"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+            picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <script type="text/javascript">
+                var slide_index = 1;
+                displaySlides(slide_index);
+                function nextSlide(n) {
+                    displaySlides(slide_index += n);
+                }
+                function currentSlide(n) {
+                    displaySlides(slide_index = n);
+                }
+                function displaySlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("showSlide");
+                    if (n > slides.length) { slide_index = 1 }
+                    if (n < 1) { slide_index = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slide_index - 1].style.display = "block";
+                }
+
+    </script>
+
+
+
+        <!-- Navigation arrows -->
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a>
+    </div>
+
+
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./assets/javascripts/lightbox.min.js"></script>
+
+<script src="path/to/lightbox.js"></script>
+
+
+</body>
+</html>
